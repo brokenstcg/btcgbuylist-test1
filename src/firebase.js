@@ -3,12 +3,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID
+  apiKey: "AIzaSyBLCmI6hiUSd_oFgb6M-60wZq9sB05WSKA",
+  authDomain: "brokentcg.firebaseapp.com",
+  projectId: "brokentcg",
+  storageBucket: "brokentcg.firebasestorage.app",
+  messagingSenderId: "136179587488",
+  appId: "1:136179587488:web:feb9762e74fe1d641fecc5",
+  measurementId: "G-E99EZWX1NB"
 };
 
 // Initialize Firebase only if config exists to prevent crashes during initial setup
@@ -27,5 +28,6 @@ try {
 } catch (error) {
     console.error("Firebase Initialization Error:", error);
 }
+
 
 export { auth, db };
